@@ -3,8 +3,8 @@ NAME = inception
 all : $(NAME)
 
 $(NAME) :
-	sudo mkdir -p "/home/hlachkar/data/wordpress"
-	sudo mkdir -p "/home/hlachkar/data/mariadb"
+	mkdir -p "/home/hlachkar/data/wordpress"
+	mkdir -p "/home/hlachkar/data/mariadb"
 	docker compose -f ./srcs/docker-compose.yml up --build -d
 
 down :
