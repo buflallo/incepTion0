@@ -18,7 +18,7 @@ if [ ! -f /var/www/html/wp-config.php ]; then
 
  	wp user create --allow-root --path='/var/www/html/' "${USR_NAME}" "${USR_MAIL}" --role=author --user_pass="${USR_PASS}";
 
-sleep 2;
+	sleep 2;
 
 fi
 

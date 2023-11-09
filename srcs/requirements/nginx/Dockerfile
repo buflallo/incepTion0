@@ -4,7 +4,7 @@ FROM debian:bullseye
 RUN apt-get clean && apt-get update && \
     apt-get install -y nginx vim curl openssl && \
     rm -rf /var/lib/apt/lists/*
-RUN mkdir /etc/nginx/ssl && mkdir /etc/nginx/ssl/private && mkdir /etc/nginx/ssl/certs
+RUN mkdir -p /etc/nginx/ssl && mkdir -p /etc/nginx/ssl/private && mkdir -p /etc/nginx/ssl/certs 
 
 RUN rm -rf /var/www/html/* 
 
